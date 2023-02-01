@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 from secrets import token_hex
-SECRET_KEY = token_hex(100)
+SECRET_KEY = 'django-insecure-_o5bj$d(i76ymlb69dcj9p*hwko(tld0ffz1xv#-uxc4$a#+9o'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
