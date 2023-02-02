@@ -25,8 +25,10 @@ python manage.py runserver
 
 - Adding check to make sure address sent to backend is a valid ETH address
 - Moving sensitive data to env vars
+- Ability to take in the ETH network and configure web3 instance based on this (right now hardcoded to goerli)
 
 #### Frontend
 
 - Creating button to request 'connect' to Metmask wallet rather than requesting this right away (this would allow a user to browse the website before authenticating)
 - Moving sensitive data to env vars
+- Retrieve and send the ETH network along with request to backend
