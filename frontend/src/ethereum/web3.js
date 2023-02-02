@@ -12,7 +12,7 @@ if (typeof window !== "undefined" && typeof window.ethereum !== "undefined") {
   });
   web3 = new Web3(window.ethereum);
   if (!web3) {
-    console.log("nope");
+    console.log("Unable to connect to Metamask wallet");
   }
 } else {
   window.alert("Metamask must be installed to login!");

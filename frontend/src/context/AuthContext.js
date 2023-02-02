@@ -72,7 +72,6 @@ export const AuthProvider = ({ children }) => {
   };
 
   let handleSignMetamaskMessage = async (user) => {
-    // try {
     let signature = await web3.eth.personal.sign(
       `I am signing my one-time nonce: ${user["nonce"]}`, // MOVE MESSAGE TO ENV VARS
       address,
@@ -80,9 +79,6 @@ export const AuthProvider = ({ children }) => {
     );
 
     return signature;
-    //   } catch (error) {
-    //     console.log("You must sign the message to login", error);
-    //   }
   };
 
   let handleAuthenticate = async (signature) => {
